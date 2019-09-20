@@ -38,7 +38,7 @@ body {
 }
 
 header nav {
-    background-color: #222;
+    background-color: steelblue;
     height: 100vh;
     width: 400px;
     display: grid;
@@ -56,7 +56,7 @@ header nav {
 header nav a {
     text-decoration: none;
     color: white;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 #burger div {
@@ -72,7 +72,7 @@ header nav a {
 }
 
 #cb:checked ~ #burger div:nth-child(2) {
-    transform: translateX(50vw);
+    transform: translateX(0vw);
     opacity: 0;
 }
 
