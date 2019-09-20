@@ -141,3 +141,7 @@ h1 {
     color: black;
 }
 
+/* Oppgave 2 */
+#oppgave02 {
+    list-style-type: lower-alpha;
+}
