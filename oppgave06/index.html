@@ -6,6 +6,17 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Oppgave 6</title>
         <link rel="stylesheet" href="../index.css">
+
+        <style>
+            #outPut {
+                display: inline;
+            }
+
+            #kommentar06 {
+                margin-top: 30px;
+                font-style: italic;
+            }
+        </style>
     </head>
     <body>
         <header>
@@ -32,8 +43,28 @@
         </header>
             
         <main>
-            <h1>Oppgave 6</h1>
+            <h1>Oppgave 6 - Kalkulatoren</h1>
+            <input type="number" id="inpNumber01"> + <input type="number" id="inpNumber02">
+            <button id="btnUtregning">=</button> <div id="outPut">Tallet kommer her</div>
+
+            <div id="kommentar06">
+                <p>Har virkelig ikke fått til denne oppgaven.</p>
+            </div>
         </main>
+
+        <script>
+            const inpNumber01 = document.querySelector("#inpNumber01");
+            const inpNumber02 = document.querySelector("#inpNumber02");
+            const btnUtregning = document.querySelector("#btnUtregning");
+            const outPut = document.querySelector("#outPut");
+
+            function visUtregning() {
+                outPut.innerHTML = inpNumber01.value + inpNumber02.value;             
+            }
+
+            btnUtregning.onclick = visUtregning; 
+
+        </script>
 
         <footer>
             <p>Catharina Sørum - 20. september 2019 - Frontend Utvikling - Fagskolen Kristiania</p>
