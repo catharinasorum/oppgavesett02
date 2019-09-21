@@ -33,7 +33,43 @@
             
         <main>
             <h1>Oppgave 8</h1>
+
+            <h3 id="outTittel">Valgfri Tittel</h3>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/92/Bald_eagle_-a.jpg" alt="" id="outImg">
+            
+            <div id="slidecontainer">
+               <input type="range" id="imgRange" min="0" max="100" class="slider"> 
+               <p>Størrelse på bilde: <span id="strValue"></span>%</p>
+            </div>
+            
+            <input type="text" id="inpURL" placeholder="Skriv inn en URL til det bildet du vil se">
+            <input type="text" id="inpTittel" placeholder="Hva slags tittel vil du at bildet ditt skal ha?">
+            <button id="btnImg">Vis mitt bilde</button>
         </main>
+
+
+        <script>
+            const outTittel = document.querySelector("#outTittel");
+            const outImg = document.querySelector("#outImg");
+            const imgRange = document.querySelector("#imgRange");
+            const strValue = document.querySelector("#strValue");
+            const inpURL = document.querySelector("#inpURL");
+            const inpTittel = document.querySelector("#inpTittel");
+            const btnImg = document.querySelector("#btnImg");
+
+            strValue.innerHTML = imgRange.value;
+            imgRange.oninput = function () {
+                strValue.innerHTML = this.value;
+            }
+
+            function visRestultat() {
+                outTittel.innerHTML = inpTittel.value;
+                outImg.innerHTML = inpURL.value; // Endre value
+            }
+
+            btnImg.onclick = visRestultat;
+
+        </script>
 
         <footer>
             <p>Catharina Sørum - 20. september 2019 - Frontend Utvikling - Fagskolen Kristiania</p>

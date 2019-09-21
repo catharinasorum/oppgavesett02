@@ -136,7 +136,7 @@ h1 {
     padding: 20px;
 }
 
-#oppgave01 h2, h3, p {
+#oppgave01 h2, #oppgave01 h3, #oppgave01 p {
     padding-top: 16px;
     color: black;
 }
@@ -164,4 +164,25 @@ h1 {
 
 #inpNavn:focus, #inpBeskrivelse:focus {
     outline: none;
+}
+/* Oppgave 6 */
+
+/* Oppgave 7 */
+
+/* Oppgave 8 */
+#inpURL, #inpTittel {
+    width: 500px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#btnImg {
+    width: 200px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#imgRange {
+    width: 40%;
+    transition: .2s;
 }
