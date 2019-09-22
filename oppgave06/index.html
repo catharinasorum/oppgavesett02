@@ -59,7 +59,7 @@
             const outPut = document.querySelector("#outPut");
 
             function visUtregning() {
-                outPut.innerHTML = inpNumber01.value + inpNumber02.value;             
+                outPut.innerHTML = Number(inpNumber01.value) + Number(inpNumber02.value);             
             }
 
             btnUtregning.onclick = visUtregning; 
