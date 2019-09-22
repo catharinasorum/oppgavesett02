@@ -32,8 +32,39 @@
         </header>
             
         <main>
-            <h1>Oppgave 9</h1>
+            <h1>Oppgave 9 - Visittkort</h1>
+            <input type="text" id="inpNavn" placeholder="Skriv inn ditt Fornavn og Etternavn">
+            <input type="text" id="inpStilling" placeholder="Hva er din stilling?">
+            <input type="url" id="inpUrl" placeholder="Lim inn ditt bilde-url">
+        
+
+            <article id="visittKort">
+
+            </article>
+
         </main>
+
+        <script>
+            const inpNavn = document.querySelector("#inpNavn");
+            const inpStilling = document.querySelector("#inpStilling");
+            const inpUrl = document.querySelector("#inpUrl");
+            const visittKort = document.querySelector("visittKort");
+
+
+            function visVisittkort() {
+                visittKort.innerHTML = `
+                <h2>${inpNavn.value}</h2>
+                <p><b>Stilling:</b> ${inpStilling.value}</p>
+                <img src=${inpUrl} style="width: 300px">
+                `;
+            }
+
+            //inpNavn.addEventListener("input", visVisittkort);
+            inpStilling.addEventListener("inputStilling", visVisittkort);
+            inpUrl.addEventListener("input", visVisittkort);
+
+
+        </script>
 
         <footer>
             <p>Catharina Sørum - 20. september 2019 - Frontend Utvikling - Fagskolen Kristiania</p>
