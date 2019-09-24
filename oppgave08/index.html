@@ -60,11 +60,13 @@
             strValue.innerHTML = imgRange.value;
             imgRange.oninput = function () {
                 strValue.innerHTML = this.value;
+                outImg.style.width = this.value + "%";
+                
             }
 
             function visRestultat() {
                 outTittel.innerHTML = inpTittel.value;
-                outImg.innerHTML = inpURL.value; // Endre value
+                outImg.src = inpURL.value; // Endre value
             }
 
             btnImg.onclick = visRestultat;
