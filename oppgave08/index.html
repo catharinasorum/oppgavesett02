@@ -42,39 +42,16 @@
                <p>Størrelse på bilde: <span id="strValue"></span>%</p>
             </div>
             
-            <input type="URL" id="inpURL" accept="image/*" placeholder="Skriv inn en URL til det bildet du vil se">
-            <input type="text" id="inpTittel" placeholder="Hva slags tittel vil du at bildet ditt skal ha?">
+            <input type="URL" id="inpURL" accept="image/*" placeholder="Skriv inn en URL til det bildet du vil se" required>
+            <input type="text" id="inpTittel" placeholder="Hva slags tittel vil du at bildet ditt skal ha?" required>
             <button id="btnImg">Vis mitt bilde</button>
         </main>
 
 
-        <script>
-            const outTittel = document.querySelector("#outTittel");
-            const outImg = document.querySelector("#outImg");
-            const imgRange = document.querySelector("#imgRange");
-            const strValue = document.querySelector("#strValue");
-            const inpURL = document.querySelector("#inpURL");
-            const inpTittel = document.querySelector("#inpTittel");
-            const btnImg = document.querySelector("#btnImg");
-
-            strValue.innerHTML = imgRange.value;
-            imgRange.oninput = function () {
-                strValue.innerHTML = this.value;
-                outImg.style.width = this.value + "%";
-                
-            }
-
-            function visRestultat() {
-                outTittel.innerHTML = inpTittel.value;
-                outImg.src = inpURL.value; // Endre value
-            }
-
-            btnImg.onclick = visRestultat;
-
-        </script>
+        <script src="index.js"></script>
 
         <footer>
-            <p>Catharina Sørum - 20. september 2019 - Frontend Utvikling - Fagskolen Kristiania</p>
+            <p>Catharina Sørum - Frontend Utvikling - Fagskolen Kristiania</p>
         </footer>
     
 

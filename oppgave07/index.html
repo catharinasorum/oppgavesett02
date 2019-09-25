@@ -6,11 +6,6 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Oppgave 7</title>
         <link rel="stylesheet" href="../index.css">
-        <style>
-            #inpNavn {
-                margin-bottom: 20px;
-            }
-        </style>
     </head>
     <body>
         <header>
@@ -46,26 +41,10 @@
         </main>
 
 
-        <script>
-            const inpNavn = document.querySelector("#inpNavn");
-            const oppgave07 = document.querySelector("#oppgave07");
-
-            function visInnsett() {
-                oppgave07.innerHTML = `
-                <h2>Kjære ${inpNavn.value}</h2>
-                <p>I en automatisk loddtrekning har du, ${inpNavn.value}, blitt trukket ut som den heldige vinneren av en splitter ny iPhone med innskripsjonen "I am ${inpNavn.value}".</p>
-                <h3>Vinneren er ${inpNavn.value}</h3>
-                <p>Du, ${inpNavn.value}, kan hente telefonen på Kolsås i morgen.</p>
-            `;
-            }
-
-            inpNavn.addEventListener("input", visInnsett);
-
-            
-        </script>
+        <script src="index.js"></script>
 
         <footer>
-            <p>Catharina Sørum - 20. september 2019 - Frontend Utvikling - Fagskolen Kristiania</p>
+            <p>Catharina Sørum - Frontend Utvikling - Fagskolen Kristiania</p>
         </footer>
     
 

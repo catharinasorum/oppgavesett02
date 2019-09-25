@@ -33,41 +33,22 @@
             
         <main>
             <h1>Oppgave 9 - Visittkort</h1>
-            <input type="text" id="inpNavn" placeholder="Skriv inn ditt Fornavn og Etternavn">
-            <input type="text" id="inpStilling" placeholder="Hva er din stilling?">
-            <input type="url" id="inpUrl" placeholder="Lim inn ditt bilde-url">
+            <input type="text" id="inpFullNavn" placeholder="Skriv inn ditt Fornavn og Etternavn" required>
+            <input type="text" id="inpStilling" placeholder="Hva er din stilling?" required>
+            <input type="URL" id="inpImgUrl"  accept="image/*" placeholder="Lim inn ditt bilde-url" required>
+            <button id="btnVisitt">Vis mitt visittkort</button>
         
 
-            <article id="visittKort">
-
-            </article>
+            <div id="visittKort">
+            </div>
 
         </main>
+           
 
-        <script>
-            const inpNavn = document.querySelector("#inpNavn");
-            const inpStilling = document.querySelector("#inpStilling");
-            const inpUrl = document.querySelector("#inpUrl");
-            const visittKort = document.querySelector("visittKort");
-
-
-            function visVisittkort() {
-                visittKort.innerHTML = `
-                <h2>${inpNavn.value}</h2>
-                <p><b>Stilling:</b> ${inpStilling.value}</p>
-                <img src=${inpUrl} style="width: 300px">
-                `;
-            }
-
-            //inpNavn.addEventListener("input", visVisittkort);
-            inpStilling.addEventListener("inputStilling", visVisittkort);
-            inpUrl.addEventListener("input", visVisittkort);
-
-
-        </script>
+        <script src="index.js"></script>
 
         <footer>
-            <p>Catharina Sørum - 20. september 2019 - Frontend Utvikling - Fagskolen Kristiania</p>
+            <p>Catharina Sørum - Frontend Utvikling - Fagskolen Kristiania</p>
         </footer>
     
 

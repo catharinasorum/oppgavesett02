@@ -4,7 +4,7 @@
 }
 
 body {
-    padding: 16px;
+    padding: 1.5rem;
     background-color: steelblue;
     font-family: Helvetica, sans-serif;
     color: white;   
@@ -117,9 +117,8 @@ footer p {
 }
 
 #oppgavesett-2 h1 {
-    font-size: 100px;
+    font-size: 6rem;
     text-transform: uppercase;
-    margin: 0;
 }
 
 
@@ -133,11 +132,11 @@ h1 {
 #oppgave01 {
     width: 35%;
     background-color: lightgreen;
-    padding: 20px;
+    padding: 2rem;
 }
 
 #oppgave01 h2, #oppgave01 h3, #oppgave01 p {
-    padding-top: 16px;
+    padding-top: 1rem;
     color: black;
 }
 
@@ -146,20 +145,24 @@ h1 {
     list-style-type: lower-alpha;
 }
 
+img {
+    width: 50%;
+}
+
 /* Oppgave 4 */
 #oppgave04 {
     width: 35%;
     color: black;
     background-color: white;
-    padding: 20px;
+    padding: 2rem;
 }
 
 /* Oppgave 5 */
 
 #inpNavn, #inpBeskrivelse {
-    width: 200px;
-    padding: 14px;
-    border-radius: 8px;
+    width: 14rem;
+    padding: 1rem;
+    border-radius: 0.7rem;
 }
 
 #inpNavn:focus, #inpBeskrivelse:focus {
@@ -168,21 +171,39 @@ h1 {
 /* Oppgave 6 */
 
 /* Oppgave 7 */
+#inpNavn {
+    margin-bottom: 2rem;
+}
 
 /* Oppgave 8 */
 #inpURL, #inpTittel {
-    width: 500px;
-    padding: 20px;
-    border-radius: 8px;
+    width: 20rem;
+    padding: 0.9rem;
+    border-radius: 0.4rem;
 }
 
 #btnImg {
-    width: 200px;
-    padding: 20px;
-    border-radius: 8px;
+    width: 14rem;
+    padding: 0.9rem;
+    border-radius: 0.4rem;
 }
 
 #imgRange {
     width: 40%;
     transition: .2s;
+}
+
+#outImg {
+    width: 30%;
+}
+
+/* Oppgave 9 */
+#inpFullNavn, #inpStilling, #inpImgUrl, #btnVisitt {
+    width: 14rem;
+    padding: 1rem;
+    border-radius: 0.3rem;
+}
+
+#visittKort article p{
+    margin-top: 0.5rem;
 }
