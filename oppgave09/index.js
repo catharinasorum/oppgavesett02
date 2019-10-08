@@ -5,7 +5,7 @@ const btnVisitt = document.querySelector("#btnVisitt");
 const visittKort = document.querySelector("#visittKort");
 
 function visVisittkort() {
-    visittKort.innerHTML = `
+    visittKort.innerHTML += `
     <article>
         <h1>${inpFullNavn.value}</h1>
         <p><b>Stilling:</b> ${inpStilling.value}</p>
