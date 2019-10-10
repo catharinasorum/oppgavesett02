@@ -170,6 +170,14 @@ img {
     outline: none;
 }
 /* Oppgave 6 */
+#outPut {
+    display: inline;
+}
+
+#kommentar06 {
+    margin-top: 30px;
+    font-style: italic;
+}
 
 /* Oppgave 7 */
 #inpNavn {
